@@ -18,6 +18,7 @@ function SearchProfile() {
 
     useEffect(()=>{
         let string = searchString.toLocaleLowerCase();
+        if(profiles.length)
         let newResults = profiles.filter( profile => {
             return (profile.name.toLocaleLowerCase().includes(string))
         })
