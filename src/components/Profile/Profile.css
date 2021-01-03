@@ -1,0 +1,27 @@
+.main{
+    padding: 50px 100px;
+    flex-direction: row;
+}
+
+.main img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;;
+}
+
+
+.main .details{
+    padding:40px;
+    align-items: center;
+    font-size:25px;
+    color: var(--sec);
+    flex-direction: column;
+    justify-content: left;
+}
+.main .details .light{
+    color:gray;
+}
+
+.desc{
+    justify-content: space-evenly;
+}

@@ -1,0 +1,25 @@
+.top{
+    padding: 15px;
+    justify-content: space-between;
+    color:var(--sec);
+    font-weight: bold;
+}
+
+.contact b{
+    color: var(--primary);
+}
+.links{
+    list-style: none;
+    padding:0;
+}
+.header{
+    padding:20px 50px;
+    box-shadow: 0px 5px 20px 3px rgb(230 233 249 / 90%);
+    align-items: center;
+}
+
+h2{
+    width:100%;
+    text-align:center;
+    margin:40px 10px;
+}
