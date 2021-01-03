@@ -18,8 +18,8 @@ function SearchProfile() {
 
     useEffect(()=>{
         let string = searchString.toLocaleLowerCase();
-        if(profiles.length)
-        let newResults = profiles.filter( profile => {
+        if(profiles && profiles.length)
+        var newResults = profiles.filter( profile => {
             return (profile.name.toLocaleLowerCase().includes(string))
         })
         setResults(newResults);
@@ -34,7 +34,7 @@ function SearchProfile() {
     <section className="search">
       <input placeholder="Search By Name" className="input" type="search" onChange={(e) => setSearchString(e.target.value)}/>
          {
-             searchString && results.length > 0 && <ul className='results'>
+             searchString && results && results.length > 0 && <ul className='results'>
              {
                 results.map( result => <li key={result.id}>
                          <Link to={`/profile/${result.id}`} target="_blank">{ result.name }</Link>
