@@ -37,7 +37,7 @@ function SearchProfile() {
              searchString && results && results.length > 0 && <ul className='results'>
              {
                 results.map( result => <li key={result.id}>
-                         <Link to={`/profile/${result.id}`} target="_blank">{ result.name }</Link>
+                         <Link to={`/profile/${result.id}`}>{ result.name }</Link>
                     </li>
                     )
              } 
